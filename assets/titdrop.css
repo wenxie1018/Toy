@@ -1,0 +1,35 @@
+.titdropdown
+{   display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+}
+.titbtn
+{
+    background:none;
+    color: rgb(252, 166, 166);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    font-size: 15pt;
+    padding-left: 0;
+    font-weight: bold;
+}
+.titdropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #dab1b1b7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.titdropdown-content a
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.titdropdown:hover .titdropdown-content {display: block;}
+.titdropdown-content a:hover {background-color: #ddd;}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玩物喪薪|結帳</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+</head>
+<style>
+    @import url(assets/account.css);
+</style>
+<body>
+    <div id="main">
+        <body id="body1">
+            <header id="navbar">
+                    
+                    <div id="myNav" class="overlay">
+                      
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+                      </a>
+                <div class="overlay-content" id="menu">
+                  <a style=" background-color: #FF96ADa4;"  href="product.html">♡所有商品♡</a>
+                  <a style="background-color: #005b8ca4;" href="productzhoushu.html">♡咒術迴戰♡</a>
+                  <a style=" background-color: #FF96ADa4;"  href="productoni.html">♡鬼滅之刃♡</a>
+                  <a style="background-color: #005A8Ca4;" href="productmoon.html">♡美少女戰士♡</a>
+                  <a style=" background-color: #FF96ADa4;"  href="productlabi.html">♡蠟筆小新♡</a>
+                  <a style="background-color: #005A8Ca4; " href="contact.html">♡關於我們♡</a>  
+                </div>
+                    </div>
+                    <span class="menu" onclick="openNav()">
+                      <div class="menuicon"></div>
+                      <div class="menuicon"></div> 
+                      <div class="menuicon"></div>
+                    </span>
+        
+                    <input class="header" id="textbox" type="search" placeholder="搜索您想要的商品">
+                    <div class="dropdown">
+                      <a href="shoppingcart.html"><button class="dropbtn">購物車</button></a>
+                      <div class="dropdown-content">
+                        <div class="shopping"><img src="assets/hotproduct/gojio.jpg" width="100px"><a href="#">景品 咒術迴戰 五條悟</a></div>
+                        <div class="shopping"><img src="assets/hotproduct/gojio.jpg" width="100px"><a href="#">景品 咒術迴戰 五條悟</a></div>
+                        <div class="shopping"><img src="assets/hotproduct/gojio.jpg" width="100px"><a href="#">景品 咒術迴戰 五條悟</a></div>
+                      </div>
+                    </div>
+                    <button class="header" style="border: none; background:none;" onclick="document.getElementById('id01').style.display='block'">登入/註冊</button>
+                    
+                  <div id="id01" class="modal animate">
+                    <form class="modal-content" action="" method="post">
+                      <div class="container">
+                        <h3>LOGIN</h3>
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+                        <label for="uname"><b>Username使用者名稱</b></label>
+                        <input class="passworduser" type="text" placeholder="Enter Username" name="uname" required>
+                  
+                        <label for="psw"><b>Password密碼</b></label>
+                        <input class="passworduser" type="password" placeholder="Enter Password" name="psw" required>
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember"> Remember me 記住我 <a href="">忘記密碼?</a> 
+        
+                        </label>  
+                        <button id="loginbut" type="submit">登入</button><br>
+                        
+                        <p>還沒有帳戶? <a href="register.html">點我註冊</a></p>
+                        
+                      </div>
+                    </form>
+                    
+                  </div>
+                  <button class="header" style="border: none; background:none;"><a style="color: black; text-decoration: none;" href="user.html">會員中心</a></button>
+                  <h2 style="margin-left:80px ; margin-top: 5px;"><a style="color: black; text-decoration: none;" href="index.html">玩物喪薪</a></h2>
+            </header>
+            <section>
+                <div class="money">
+                    <table class="table">
+                        <tr class="account-tit">
+                            <td colspan="2"></td>
+                            <td>品名</td>
+                            <td>數量</td>
+                            <td>單價</td>
+                            <td>小計</td>
+                        </tr>
+                        <tr class="product1">
+                            <td><a href="#" onclick=""><img src="assets/delete.png" width="20px"></a></td>
+                            <td><img src="assets/咒術特典/1/1 (1).jpg" width="100px"></td>
+                            <td>[特典版] Kotobukiya 咒術迴戰 五條悟</td>
+                            <td><input class="num" type="number" value="1"></td>
+                            <td>$4,450</td>
+                            <td>$4,450</td>
+                        </tr>
+                    </table>
+                    <div class="count">
+                        <h2 style="font-weight: lighter;">小結</h2><br>
+                        <p class="count-p">商品金額  $4,450</p><br>
+                        <p class="count-p">運費      $0</p><br>
+                        <p class="count-p">總金額    $4,450</p><br>
+                    </div>
+                </div>
+                
+                <form class="data">
+                    <h2 style="margin-top: 20px; margin-bottom: 20px;">購買人資料</h2>
+                    <p class="data-p">姓名</p><input class="input" type="text">
+                    <p class="data-p">連絡電話</p><input class="input" placeholder="09-xxxxxxxx" type="text">
+                    <h2 style="margin-top: 20px; margin-bottom: 20px;">收貨人資料</h2>
+                    <p class="data-p">姓名</p><input class="input" type="text">
+                    <p class="data-p">連絡電話</p><input placeholder="09-xxxxxxxx" class="input" type="text">
+                    <p class="data-p">地址</p><select class="input" style=" margin-top: 10px; width: 20%;">
+                        <option>臺北市</option>
+                        <option>新北市</option>
+                        <option>桃園市</option>
+                        <option>臺中市</option>
+                        <option>臺南市</option>
+                        <option>高雄市</option>
+                        <option>基隆市</option>
+                        <option>嘉義市</option>
+                        <option>新竹市</option>
+                        <option>新竹縣</option>
+                        <option>苗栗縣</option>
+                        <option>彰化縣</option>
+                        <option>南投縣</option>
+                        <option>雲林縣</option>
+                        <option>嘉義縣</option>
+                        <option>屏東縣</option>
+                        <option>宜蘭縣</option>
+                        <option>花蓮縣</option>
+                        <option>臺東縣</option>
+                        <option>澎湖縣</option>
+                        <option>金門縣</option>
+                        <option>連江縣</option>
+                    </select>
+                    <input style="width: 70%;" class="input" type="text" name="address">
+                    <h2 style="margin-top: 20px; margin-bottom: 20px;">付費方式</h2>
+                    <input class="radio" type="radio" name="pay" value="1">信用卡<input class="radio" type="radio" name="pay" value="2">貨到付款<input class="radio" type="radio" name="pay" value="3">帳戶轉帳
+                    <h2 style="margin-top: 20px; margin-bottom: 20px;">備註</h2>
+                    <textarea placeholder="請輸入文字" name="contactus" class="textarea" ></textarea>
+                    <input class="submitbut" type="submit" value="送出">
+                </form>
+                
+            </section>
+            <footer>
+              <div class="footer" style="margin-top: 10px;">
+                <img width="280px" src="assets/logo4.png"><br>
+              </div>
+              <div class="footer">
+                <H1>客服時間</H1><p id="footer">平日上午9:00-晚上9:00</p>
+                <p class="copyright">© 2021 玩物喪新 All Rights Reserved</p>
+              </div>
+              <div class="footer">
+                <H1>聯絡我們</H1>
+                <p id="footer">+88632655401</p>
+              </div>
+              <div class="footer">
+                <H1>地址</H1>
+                <p id="footer">320桃園市中壢區中北路200號</p>
+                
+              </div>
+              <div class="footer1">
+                <a href="https://www.instagram.com/" target="_blank"><img src="assets/instagram.png" width="50px"></a>
+              </div>
+              <div class="footer1">
+                <a href="https://www.facebook.com/" target="_blank"><img src="assets/facebook.png" width="50px"></a>
+              </div>
+            </footer>
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+          
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+          
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+          
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " active";
+                }
+          </script>
+          <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
+            <script>
+              function openNav() {
+                document.getElementById("myNav").style.height = "100%";
+                document.getElementById("main").style.marginLeft = "250px";
+                document.getElementById("main").style.backgroundColor = "rgba(0, 0, 0, 0.726);";
+              }
+          
+          /* Close */
+              function closeNav() {
+                document.getElementById("myNav").style.height = "0%";
+                document.getElementById("main").style.marginLeft = "0";
+                document.getElementById("main").style.backgroundColor = "none";
+              }
+            </script>
+            <script>
+              window.onscroll = function() {scrollFunction()};
+          
+              function scrollFunction() {
+                if (document.body.scrollTop>200 || document.documentElement.scrollTop>200) {
+                  document.getElementById("navbar").style.top = "-100px";
+                } else {
+                  document.getElementById("navbar").style.top = "0";
+                }
+              }
+          
+            </script>
+</body>
+</html>

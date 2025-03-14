@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玩物喪薪|後台</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+</head>
+<style>
+    @import url(assets/back.css);
+</style>
+<body>
+    <div id="main">
+        <body id="body1">
+            <header id="navbar">
+                    
+                    <div id="myNav" class="overlay">
+                      
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+                      </a>
+                <div class="overlay-content" id="menu">
+                  <a style=" background-color: #FF96ADa4;"  href="product.html">♡所有商品♡</a>
+                  <a style="background-color: #005b8ca4;" href="productzhoushu.html">♡咒術迴戰♡</a>
+                  <a style=" background-color: #FF96ADa4;"  href="productoni.html">♡鬼滅之刃♡</a>
+                  <a style="background-color: #005A8Ca4;" href="productmoon.html">♡美少女戰士♡</a>
+                  <a style=" background-color: #FF96ADa4;"  href="productlabi.html">♡蠟筆小新♡</a>
+                  <a style="background-color: #005A8Ca4; " href="contact.html">♡關於我們♡</a>  
+                </div>
+                    </div>
+                    <span class="menu" onclick="openNav()">
+                      <div class="menuicon"></div>
+                      <div class="menuicon"></div> 
+                      <div class="menuicon"></div>
+                    </span>
+        
+                    <input class="header" id="textbox" type="search" placeholder="搜索您想要的商品">
+                    <div class="dropdown">
+                      <a href="shoppingcart.html"><button class="dropbtn">購物車</button></a>
+                      <div class="dropdown-content">
+                        <div class="shopping"><img src="assets/hotproduct/gojio.jpg" width="100px"><a href="#">景品 咒術迴戰 五條悟</a></div>
+                        <div class="shopping"><img src="assets/hotproduct/gojio.jpg" width="100px"><a href="#">景品 咒術迴戰 五條悟</a></div>
+                        <div class="shopping"><img src="assets/hotproduct/gojio.jpg" width="100px"><a href="#">景品 咒術迴戰 五條悟</a></div>
+                      </div>
+                    </div>
+                    <button class="header" style="border: none; background:none;" onclick="document.getElementById('id01').style.display='block'">登入/註冊</button>
+                    
+                  <div id="id01" class="modal animate">
+                    <form class="modal-content" action="" method="post">
+                      <div class="container">
+                        <h3>LOGIN</h3>
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+                        <label for="uname"><b>Username使用者名稱</b></label>
+                        <input class="passworduser" type="text" placeholder="Enter Username" name="uname" required>
+                  
+                        <label for="psw"><b>Password密碼</b></label>
+                        <input class="passworduser" type="password" placeholder="Enter Password" name="psw" required>
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember"> Remember me 記住我 <a href="">忘記密碼?</a> 
+        
+                        </label>  
+                        <button id="loginbut" type="submit">登入</button><br>
+                        
+                        <p>還沒有帳戶? <a href="register.html">點我註冊</a></p>
+                        
+                      </div>
+                    </form>
+                    
+                  </div>
+                  <button class="header" style="border: none; background:none;"><a style="color: black; text-decoration: none;" href="user.html">會員中心</a></button>
+                  <h2 style="margin-left:80px ; margin-top: 5px;"><a style="color: black; text-decoration: none;" href="index.html">玩物喪薪</a></h2>
+            </header>
+            <section>
+            <div class="section">
+                <h2>後台管理系統</h2>
+                
+                <div class="tab">
+                  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">新增</button>
+                  <button class="tablinks" onclick="openCity(event, 'Paris')">刪除</button>
+                  <button class="tablinks" onclick="openCity(event, 'Tokyo')">修改</button>
+                  <button class="tablinks" onclick="openCity(event, 'T')">訂單管理</button>
+                  <button class="tablinks" onclick="openCity(event, 'user')">會員資料管理</button>
+                </div>
+                
+                <div id="London" class="tabcontent">
+                  <h3>新增</h3>
+                  <input type="text"><input style="margin-left:10px ;" type="submit" value="送出">
+                  
+                </div>
+                
+                <div id="Paris" class="tabcontent">
+                  <h3>刪除</h3>
+                  <input type="text"><input style="margin-left:10px ;" type="submit" value="送出">
+                </div>
+                
+                <div id="Tokyo" class="tabcontent">
+                  <h3>修改</h3>
+                  <input type="text"><input style="margin-left:10px ;" type="submit" value="送出">
+                </div>
+
+                <div id="T" class="tabcontent">
+                    <h3>訂單管理</h3>
+                    <table class="table">
+                        <tr class="account-tit">
+                            <td>品名</td>
+                            <td>數量</td>
+                            <td>單價</td>
+                            <td>小計</td>
+                        </tr>
+                        <tr class="product1">
+                            <td>[特典版] Kotobukiya 咒術迴戰 五條悟</td>
+                            <td><input class="num" type="number" value="1"></td>
+                            <td>$4,450</td>
+                            <td>$4,450</td>
+                            <td><button>刪除</button></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="user" class="tabcontent">
+                    <h3>會員資料管理</h3>
+                    <table class="table">
+                        <tr class="account-tit">
+                            
+                            <td>會員名稱</td>
+                            <td>電話</td>
+                            <td>住址</td>
+                            <td>Email</td>
+                        </tr>
+                        <tr class="product1">
+                            
+                            <td>阿晏</td>
+                            <td>0900866789</td>
+                            <td>三花路365號</td>
+                            <td>riiifl@gmail.com</td>
+                            <td><button>刪除</button></td>
+                            
+                        </tr>
+                    </table>
+                </div>
+
+                
+            </div>
+            </section>
+   
+            
+            <script src="assets/back.js">
+                
+            </script>
+          </script>
+          <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
+            <script>
+              function openNav() {
+                document.getElementById("myNav").style.height = "100%";
+                document.getElementById("main").style.marginLeft = "250px";
+                document.getElementById("main").style.backgroundColor = "rgba(0, 0, 0, 0.726);";
+              }
+          
+          /* Close */
+              function closeNav() {
+                document.getElementById("myNav").style.height = "0%";
+                document.getElementById("main").style.marginLeft = "0";
+                document.getElementById("main").style.backgroundColor = "none";
+              }
+            </script>
+            <script>
+              window.onscroll = function() {scrollFunction()};
+          
+              function scrollFunction() {
+                if (document.body.scrollTop>200 || document.documentElement.scrollTop>200) {
+                  document.getElementById("navbar").style.top = "-100px";
+                } else {
+                  document.getElementById("navbar").style.top = "0";
+                }
+              }
+          
+            </script>
+</body>
+</html>
